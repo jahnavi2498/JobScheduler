@@ -1,0 +1,2 @@
+# JobScheduler
+The framework will be intelligent about when it executes jobs, and attempt to batch and defer them as much as possible. Typically if you don't specify a deadline on a job, it can be run at any moment depending on the current state of the JobScheduler's internal queue.  While a job is running, the system holds a wakelock on behalf of your app. For this reason, you do not need to take any action to guarantee that the device stays awake for the duration of the job.
